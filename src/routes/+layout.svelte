@@ -1,11 +1,7 @@
-<script>
-	import Header from './Header.svelte';
+<script lang="ts">
 	import './style.css';
+	// import type { PageData } from './$types';
+	// export let data: PageData;
 </script>
 
-<div class="app bg-neutral-900 text-white min-h-screen">
-	<Header />
-	<main>
-		<slot />
-	</main>
-</div>
+<slot />

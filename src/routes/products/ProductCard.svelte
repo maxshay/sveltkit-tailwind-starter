@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { Product } from './product.model';
-
 	export let product: Product;
 </script>
 

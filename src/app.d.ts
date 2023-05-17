@@ -1,9 +1,20 @@
-// See https://kit.svelte.dev/docs/types#app
-// for information about these interfaces
-// and what to do when importing types
-declare namespace App {
-	// interface Error {}
-	// interface Locals {}
-	// interface PageData {}
-	// interface Platform {}
+import PocketBase, { Record, Admin } from "pocketbase";
+
+// https://kit.svelte.dev/docs/types#app
+declare global {
+	namespace App {
+		// interface Error {}
+		interface Locals {
+			pb: PocketBase,
+			user: Record | Admin | null
+		}
+		// interface PageData {}
+		// interface Platform {}
+	}
+	namespace svelte.JSX {
+		interface HTMLProps<T> {
+			onclick_outside: (e: CustomEvent) => void;
+		}
+	}
 }
+
