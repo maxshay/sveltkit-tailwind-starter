@@ -1,7 +1,7 @@
 /** Dispatch event on click outside of node */
 export function clickOutside(node: HTMLElement) {
     const handleClick = (event: MouseEvent) => {
-        console.log(event.target)
+        // console.log(event.target)
         if (node && !node.contains(event.target as Node) && !event.defaultPrevented) {
             node.dispatchEvent(
                 new CustomEvent('click_outside')
