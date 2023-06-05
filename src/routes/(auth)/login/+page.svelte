@@ -14,7 +14,7 @@
 	</p>
 </div>
 <form action="?/login" class="mt-10 grid grid-cols-1 gap-y-8" method="post">
-	<div class="">
+	<div>
 		<label for="email" class="mb-3 block text-sm font-medium text-gray-700">Email address</label
 		><input
 			id="email"

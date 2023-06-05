@@ -1,7 +1,4 @@
-import PocketBase from 'pocketbase';
-import { SECRET_BACKEND_API_URL } from '$env/static/private';
-
-const pb = new PocketBase(SECRET_BACKEND_API_URL);
+import { pb } from "$lib/server/pocketbase"
 
 export async function handle({ event, resolve }) {
     event.locals.pb = pb
