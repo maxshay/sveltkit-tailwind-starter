@@ -2,6 +2,9 @@
 	import Logo from '../../Logo.svelte';
 </script>
 
+<svelte:head>
+	<title>Register</title>
+</svelte:head>
 <a aria-label="Home" href="/">
 	<Logo />
 </a>
